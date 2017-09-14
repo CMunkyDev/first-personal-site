@@ -1,0 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END OF RESET*/
+* {
+  box-sizing: border-box;
+  --tab-header-height: 30px;
+}
+
+.fluid {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+}
+
+.main-contain {
+  height: 100vh;
+  background: #ebff8c;
+}
+
+a {
+  text-decoration: none;
+  color: #F05D23;
+}
+header {
+  /*temp height & color*/
+  height: 20vh;
+  min-height: 100px;
+  background: #261C15;
+}
+
+.project-tab {
+  position: absolute;
+  bottom: 0;
+  /*temp height & color*/
+  background: #F7F7F2;
+}
+
+.tab-header {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  /*temp height & color*/
+  height: var(--tab-header-height);
+}
+#tab1 {
+  height: 80vh;
+}
+
+#tab2 {
+  height: calc(80vh - var(--tab-header-height));
+  z-index: 1;
+}
+#tab1 .tab-header {
+  background: #E4E6C3;
+}
+
+#tab2 .tab-header {
+  background: #F05D23;
+}
+
+.testcontent {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background: #000;
+}
